@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    --color: #868e96;
+    --font-family: "Open Sans", sans-serif;
+    --font-weight: 400;
+    --line-height: 1;
+    --font-size: 16px;
+    --corousel-bg-color: #087f5b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color);
+    font-family: var(--font-family);
+    font-style: var(--font-weight);
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+}
+
+.corousel {
+    width: 800px;
+    margin: 100px auto;
+    background-color: var(--corousel-bg-color);
+    border-radius: 8px;
+    color: #fff;
+    padding: 32px;
+    padding-left: 86px;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+    position: relative;
+}
+
+img {
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.6);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-text {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #ebfbee;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #d3f9d8;
+}
+
+.testimonial-job {
+    font-size: 12px;
+    color: #d3f9d8;
+}
+
+.btn {
+    background-color: #e9ecef;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: var(--corousel-bg-color);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.left {
+    left: -102px;
+}
+
+.right {
+    right: -48px;
+}
+
+.dots {
+    position: absolute;
+    bottom: -55px;
+    right: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.dot {
+    border: 1.5px solid var(--corousel-bg-color);
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: var(--corousel-bg-color);
+}
